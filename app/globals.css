@@ -1,0 +1,143 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* RentByte Dark Theme Variables */
+    --rb-background: 180 4% 4%; /* #0A0A0A - Un negro profundo ligeramente azulado */
+    --rb-foreground: 0 0% 87.8%; /* #E0E0E0 - Gris claro para texto */
+    --rb-card: 210 10% 9%; /* #13161A - Gris oscuro azulado para tarjetas */
+    --rb-card-foreground: 0 0% 87.8%; /* #E0E0E0 */
+    --rb-popover: 210 10% 9%;
+    --rb-popover-foreground: 0 0% 87.8%;
+    --rb-primary: 200 100% 50%; /* #00A9FF - Azul eléctrico */
+    --rb-primary-foreground: 210 0% 98%; /* Casi blanco para texto sobre primario */
+    --rb-secondary: 210 10% 15%; /* #20262D */
+    --rb-secondary-foreground: 0 0% 87.8%;
+    --rb-muted: 210 10% 15%;
+    --rb-muted-foreground: 0 0% 60%; /* #999999 */
+    --rb-accent: 200 100% 50%;
+    --rb-accent-foreground: 210 0% 98%;
+    --rb-destructive: 0 70% 50%;
+    --rb-destructive-foreground: 0 0% 98%;
+    --rb-border: 210 8% 20%; /* #2D333B - Bordes sutiles */
+    --rb-input: 210 8% 20%;
+    --rb-ring: 200 100% 50%;
+    --radius: 0.5rem;
+  }
+
+  /* Forzar tema oscuro usando las variables de RentByte */
+  .dark,
+  :root {
+    /* Aplicar a :root para que sea el default */
+    --background: var(--rb-background);
+    --foreground: var(--rb-foreground);
+    --card: var(--rb-card);
+    --card-foreground: var(--rb-card-foreground);
+    --popover: var(--rb-popover);
+    --popover-foreground: var(--rb-popover-foreground);
+    --primary: var(--rb-primary);
+    --primary-foreground: var(--rb-primary-foreground);
+    --secondary: var(--rb-secondary);
+    --secondary-foreground: var(--rb-secondary-foreground);
+    --muted: var(--rb-muted);
+    --muted-foreground: var(--rb-muted-foreground);
+    --accent: var(--rb-accent);
+    --accent-foreground: var(--rb-accent-foreground);
+    --destructive: var(--rb-destructive);
+    --destructive-foreground: var(--rb-destructive-foreground);
+    --border: var(--rb-border);
+    --input: var(--rb-input);
+    --ring: var(--rb-ring);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1; /* Common ligatures and contextual alternates */
+  }
+  html {
+    @apply scroll-smooth;
+  }
+}
+
+/* Animaciones personalizadas */
+@keyframes rb-fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes rb-slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes rb-slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes rb-subtleShine {
+  0% {
+    background-position: -200% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
+.animate-rb-fadeIn {
+  animation: rb-fadeIn 1s ease-out forwards;
+}
+.animate-rb-slideInUp {
+  animation: rb-slideInUp 0.8s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+}
+.animate-rb-slideInLeft {
+  animation: rb-slideInLeft 0.8s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+}
+
+/* Clase para ruido de fondo */
+.noise-bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 250 250' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.7' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  opacity: 0.015; /* Muy sutil */
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Separador con efecto de brillo sutil */
+.section-divider {
+  height: 1px;
+  width: 100%;
+  max-width: 400px; /* Opcional: para que no sea pantalla completa */
+  margin: 0 auto; /* Centrar si tiene max-width */
+  background: linear-gradient(90deg, transparent, hsl(var(--primary) / 0.3), transparent);
+}
+.section-divider-subtle {
+  height: 1px;
+  width: 100%;
+  background-color: hsl(var(--border) / 0.5);
+}
