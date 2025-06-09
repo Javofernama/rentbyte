@@ -182,7 +182,7 @@ export default function RentBytePageV3() {
               href="mailto:contacto@rentbyte.cl"
               className="text-xl sm:text-2xl md:text-3xl text-brand-primary hover:text-brand-primary-hover transition-colors duration-200 font-medium tracking-wide"
             >
-              contacto@rentbyte.cl
+              contactorentbyte@gmail.com
             </a>
           </ScrollReveal>
         </div>
