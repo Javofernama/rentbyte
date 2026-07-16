@@ -8,7 +8,7 @@ export function JsonLd() {
     logo: "https://rentbyte.cl/placeholder-logo.png",
     description:
       "Empresa chilena especializada en arriendo de equipos informáticos para empresas, instituciones públicas y licitaciones. Soluciones tecnológicas B2B y B2G.",
-    email: "contactorentbyte@gmail.com",
+    email: "contacto@rentbyte.cl",
     address: {
       "@type": "PostalAddress",
       addressCountry: "CL",
