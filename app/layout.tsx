@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     siteName: "RentByte",
     title: "RentByte - Arriendo de Equipos Informáticos para Empresas y Estado",
     description:
-      "Arriendo de computadores, notebooks y servidores para empresas e instituciones públicas. Soporte incluido, contratos transparentes, sin inversión inicial.",
+      "Arriendo de computadores, notebooks y servidores para empresas e instituciones públicas. Soporte incluido, contratos transparentes.",
     images: [
       {
         url: "/og-image.png",

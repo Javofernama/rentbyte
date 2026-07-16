@@ -176,7 +176,7 @@ export default function RentBytePage() {
               <p className="text-lg sm:text-xl text-slate-400 max-w-3xl mx-auto mb-4">
                 Computadores, notebooks y servidores configurados para tu organización.
                 <br className="hidden sm:block" />
-                Soporte incluido. Contratos transparentes. Sin inversión inicial.
+                Soporte incluido. Contratos transparentes.
               </p>
             </ScrollReveal>
             <ScrollReveal animationClass="animate-rb-slideInUp" delay="delay-300">
