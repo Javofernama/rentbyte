@@ -187,7 +187,7 @@ export default function RentBytePage() {
             <ScrollReveal animationClass="animate-rb-slideInUp" delay="delay-400">
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                 <a
-                  href="mailto:contactorentbyte@gmail.com"
+                  href="mailto:contacto@rentbyte.cl"
                   className="inline-flex items-center gap-2 px-8 py-3.5 bg-brand-primary text-white rounded-lg font-medium hover:bg-brand-primary-hover transition-colors duration-200"
                 >
                   Solicitar cotización
@@ -402,11 +402,11 @@ export default function RentBytePage() {
                 Cuéntanos las necesidades de tu organización y te presentemos una propuesta técnica y comercial en menos de 48 horas.
               </p>
               <a
-                href="mailto:contactorentbyte@gmail.com"
+                href="mailto:contacto@rentbyte.cl"
                 className="inline-flex items-center gap-3 px-8 py-4 bg-brand-primary text-white rounded-lg hover:bg-brand-primary-hover transition-colors duration-200 font-medium text-lg"
               >
                 <Mail className="w-5 h-5" aria-hidden="true" />
-                contactorentbyte@gmail.com
+                contacto@rentbyte.cl
               </a>
               <p className="mt-6 text-sm text-slate-500">
                 Respondemos consultas de empresas, instituciones públicas y procesos de licitación.
