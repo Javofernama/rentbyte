@@ -132,15 +132,15 @@ const processSteps = [
 const HeroBackground = () => (
   <div className="absolute inset-0 overflow-hidden -z-10" aria-hidden="true">
     <Image
-      src="/placeholder.svg?height=1080&width=1920"
+      src="/images/hero.jpg"
       alt=""
       fill
       sizes="100vw"
       quality={80}
       priority
-      className="opacity-20 object-cover"
+      className="opacity-15 object-cover"
     />
-    <div className="absolute inset-0 bg-gradient-to-b from-brand-background/60 via-brand-background/85 to-brand-background" />
+    <div className="absolute inset-0 bg-gradient-to-b from-brand-background/70 via-brand-background/85 to-brand-background" />
   </div>
 )
 
@@ -282,8 +282,19 @@ export default function RentBytePage() {
         <section
           id="differentiators"
           aria-labelledby="differentiators-heading"
-          className="py-20 md:py-28 bg-brand-card/30"
+          className="relative py-20 md:py-28 bg-brand-card/30 overflow-hidden"
         >
+          <div className="absolute inset-0 -z-10" aria-hidden="true">
+            <Image
+              src="/images/differentiators.jpg"
+              alt=""
+              fill
+              sizes="100vw"
+              quality={60}
+              className="opacity-10 object-cover"
+            />
+            <div className="absolute inset-0 bg-brand-background/80" />
+          </div>
           <div className="container">
             <ScrollReveal animationClass="animate-rb-fadeIn" className="text-center mb-16 md:mb-20">
               <p className="text-sm font-semibold text-brand-primary tracking-widest uppercase mb-3">
@@ -385,8 +396,19 @@ export default function RentBytePage() {
         <section
           id="contact"
           aria-labelledby="contact-heading"
-          className="py-24 md:py-32"
+          className="relative py-24 md:py-32 overflow-hidden"
         >
+          <div className="absolute inset-0 -z-10" aria-hidden="true">
+            <Image
+              src="/images/cta.jpg"
+              alt=""
+              fill
+              sizes="100vw"
+              quality={60}
+              className="opacity-10 object-cover"
+            />
+            <div className="absolute inset-0 bg-brand-background/80" />
+          </div>
           <div className="container text-center">
             <ScrollReveal animationClass="animate-rb-fadeIn">
               <p className="text-sm font-semibold text-brand-primary tracking-widest uppercase mb-3">
