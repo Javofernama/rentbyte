@@ -66,6 +66,19 @@ const nextConfig = {
         ],
       },
       {
+        source: "/llms.txt",
+        headers: [
+          {
+            key: "Cache-Control",
+            value: "public, max-age=86400, stale-while-revalidate=604800",
+          },
+          {
+            key: "Content-Type",
+            value: "text/plain; charset=utf-8",
+          },
+        ],
+      },
+      {
         source: "/_next/static/(.*)",
         headers: [
           {
@@ -89,7 +102,7 @@ const nextConfig = {
     return [
       {
         source: "/inicio",
-        destination: "/#hero",
+        destination: "/#top",
         permanent: true,
       },
       {
@@ -99,7 +112,7 @@ const nextConfig = {
       },
       {
         source: "/diferenciadores",
-        destination: "/#differentiators",
+        destination: "/#why",
         permanent: true,
       },
       {
@@ -110,6 +123,16 @@ const nextConfig = {
       {
         source: "/contacto",
         destination: "/#contact",
+        permanent: true,
+      },
+      {
+        source: "/faq",
+        destination: "/#faq",
+        permanent: true,
+      },
+      {
+        source: "/preguntas-frecuentes",
+        destination: "/#faq",
         permanent: true,
       },
     ]

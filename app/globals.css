@@ -4,33 +4,26 @@
 
 @layer base {
   :root {
-    /* RentByte Dark Theme Variables */
-    --rb-background: 180 4% 4%; /* #0A0A0A - Un negro profundo ligeramente azulado */
-    --rb-foreground: 0 0% 87.8%; /* #E0E0E0 - Gris claro para texto */
-    --rb-card: 210 10% 9%; /* #13161A - Gris oscuro azulado para tarjetas */
-    --rb-card-foreground: 0 0% 87.8%; /* #E0E0E0 */
-    --rb-popover: 210 10% 9%;
-    --rb-popover-foreground: 0 0% 87.8%;
-    --rb-primary: 200 100% 50%; /* #00A9FF - Azul eléctrico */
-    --rb-primary-foreground: 210 0% 98%; /* Casi blanco para texto sobre primario */
-    --rb-secondary: 210 10% 15%; /* #20262D */
-    --rb-secondary-foreground: 0 0% 87.8%;
-    --rb-muted: 210 10% 15%;
-    --rb-muted-foreground: 0 0% 60%; /* #999999 */
-    --rb-accent: 200 100% 50%;
-    --rb-accent-foreground: 210 0% 98%;
+    --rb-background: 0 0% 100%;
+    --rb-foreground: 220 27% 9%;
+    --rb-card: 0 0% 100%;
+    --rb-card-foreground: 220 27% 9%;
+    --rb-popover: 0 0% 100%;
+    --rb-popover-foreground: 220 27% 9%;
+    --rb-primary: 219 80% 44%;
+    --rb-primary-foreground: 0 0% 100%;
+    --rb-secondary: 218 73% 95%;
+    --rb-secondary-foreground: 219 80% 44%;
+    --rb-muted: 220 38% 98%;
+    --rb-muted-foreground: 218 13% 48%;
+    --rb-accent: 219 80% 44%;
+    --rb-accent-foreground: 0 0% 100%;
     --rb-destructive: 0 70% 50%;
     --rb-destructive-foreground: 0 0% 98%;
-    --rb-border: 210 8% 20%; /* #2D333B - Bordes sutiles */
-    --rb-input: 210 8% 20%;
-    --rb-ring: 200 100% 50%;
+    --rb-border: 218 32% 93%;
+    --rb-input: 218 32% 93%;
+    --rb-ring: 219 80% 44%;
     --radius: 0.5rem;
-  }
-
-  /* Forzar tema oscuro usando las variables de RentByte */
-  .dark,
-  :root {
-    /* Aplicar a :root para que sea el default */
     --background: var(--rb-background);
     --foreground: var(--rb-foreground);
     --card: var(--rb-card);
@@ -59,10 +52,13 @@
   }
   body {
     @apply bg-background text-foreground;
-    font-feature-settings: "rlig" 1, "calt" 1; /* Common ligatures and contextual alternates */
+    font-feature-settings: "rlig" 1, "calt" 1;
   }
   html {
     @apply scroll-smooth;
+  }
+  summary::-webkit-details-marker {
+    display: none;
   }
 }
 
