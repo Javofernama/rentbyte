@@ -1,0 +1,24 @@
+{
+  "name": "RentByte - Arriendo de Computadores, Notebooks y Servidores en Chile",
+  "short_name": "RentByte",
+  "description": "Arriendo de computadores, notebooks, servidores e infraestructura TI para empresas, instituciones públicas, licitaciones y convenios marco en Chile.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1656c9",
+  "orientation": "any",
+  "lang": "es",
+  "dir": "ltr",
+  "scope": "/",
+  "categories": ["business", "technology", "productivity"],
+  "icons": [
+    {
+      "src": "/placeholder.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [],
+  "prefer_related_applications": false
+}

@@ -1,0 +1,27 @@
+# RentByte
+
+Canonical URL: https://rentbyte.cl/
+Language: es-CL
+Contact: contacto@rentbyte.cl
+Country served: Chile
+
+RentByte is a Chilean provider of IT equipment rental services for companies, public institutions, procurement processes, public tenders and framework agreements.
+
+Primary service: rental of computers, notebooks, servers, workstations and on-demand IT infrastructure for B2B and B2G organizations in Chile.
+
+Core topics:
+- Arriendo de computadores para empresas en Chile
+- Arriendo de notebooks para empresas en Chile
+- Arriendo de servidores e infraestructura TI
+- Equipamiento informatico para instituciones publicas
+- Licitaciones publicas y convenios marco
+- Soporte, mantencion, implementacion y configuracion de equipos
+
+Main conversion action: request a quote by email at contacto@rentbyte.cl.
+
+Useful sections:
+- Services: https://rentbyte.cl/#services
+- Why RentByte: https://rentbyte.cl/#why
+- Process: https://rentbyte.cl/#process
+- FAQ: https://rentbyte.cl/#faq
+- Contact: https://rentbyte.cl/#contact
